@@ -10,6 +10,12 @@ import java.util.Deque;
 import java.util.Map;
 import java.util.function.BiFunction;
 
+/**
+ * Antlr4 based listener that walks the parse tree and and executes
+ * actions as necessary.
+ *
+ * @author dkozak
+ */
 public class EvaluatingListener extends ExpressionsBaseListener {
 
     private final Map<String, Integer> context;
